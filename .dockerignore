@@ -1,0 +1,12 @@
+vendor/
+node_modules/
+.env
+.git
+.github
+.gitignore
+.DS_Store
+*.log
+*.sqlite
+*.sqlite-journal
+storage/*.key
+storage/*.lock
