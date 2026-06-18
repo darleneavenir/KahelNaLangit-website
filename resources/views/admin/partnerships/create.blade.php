@@ -34,7 +34,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h2>Add New Partnership</h2>
-                        <form method="POST" action="{{ route('admin.partnerships.store') }}">
+                        <form method="POST" action="{{ route('admin.partnerships.store') }}" enctype="multipart/form-data">
                             @csrf
                             <div class="mb-3">
                                 <label for="name" class="form-label">Organization Name</label>
@@ -54,6 +54,14 @@
                                     <option value="current">Current</option>
                                     <option value="past">Past</option>
                                 </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="year_started" class="form-label">Year Started</label>
+                                <input type="number" class="form-control" id="year_started" name="year_started" min="1900" max="{{ date('Y') }}">
+                            </div>
+                            <div class="mb-3">
+                                <label for="logo" class="form-label">Partner Logo</label>
+                                <input type="file" class="form-control" id="logo" name="logo" accept="image/*">
                             </div>
                             <button type="submit" class="btn btn-primary">Save Partnership</button>
                             <a href="{{ route('admin.partnerships.index') }}" class="btn btn-secondary">Cancel</a>
