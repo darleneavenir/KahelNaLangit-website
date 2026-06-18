@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Partnerships - Kahel na Langit</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="viewstyle.css.css">
     <style>
         .navbar { background: #2c3e50 !important; }
         .page-header { background: linear-gradient(135deg, #f39c12, #e67e22); color: white; padding: 50px 0; margin-bottom: 30px; }
